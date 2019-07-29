@@ -22,7 +22,6 @@ ENDIF
 
 3. Laundry Day
 --------------
-
 1. tampung nilai 0 di variable 'baju'
 2. selama 'baju' kurang 20, maka 'baju' sama dengan 'baju' di tambah 1 dan print baju
 3. jika nilai baju sudah 20
