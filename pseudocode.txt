@@ -4,9 +4,27 @@ STORE 'percepatanBenda' with 2
 SET 'resultanGaya' with 'massaBenda' TIMES 'percepatanBenda'
 PRINT 'resultanGaya'
 
+==============================================================
+
 2. Tahun Kabisat
-IF 'tahun' MODULUS 4 EQUALS TO 0 AND 'tahun' MODULUS 100 NOT EQUALS TO 100 THEN
+IF 'tahun' MODULUS 4 EQUALS TO 0 AND 'tahun' MODULUS 100 NOT EQUALS TO 0 THEN
   PRINT true
 ELSE
   PRINT false
-END IF
+ENDIF
+
+1. tampung nilai input(harus number) di variable 'tahun'
+2. apabila 'tahun' habis di bagi 4 dan tidak habis di bagi 100, maka tahun tersebut adalah tahun kabisat dan tampilkan true. jika tidak, tahun tersebut adalah bukan tahun kabisat dan tampilkan false
+
+==============================================================
+
+3. Laundry
+SET 'baju' with 0
+WHILE 'baju' LESS THAN 20 THEN
+  'baju' EQUALS 'baju' PLUS 1
+ENDWHILE
+PRINT 'baju'
+
+1. tampung nilai 0 di variable 'baju'
+2. selama 'baju' kurang 20, maka 'baju' sama dengan 'baju' di tambah 1
+3. tampilkan 'baju'
