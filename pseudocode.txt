@@ -24,15 +24,19 @@ ENDIF
 --------------
 1. tampung nilai 0 di variable 'baju'
 2. selama 'baju' kurang 20, maka 'baju' sama dengan 'baju' di tambah 1 dan print baju
-3. jika nilai baju sudah 20
-4. nyalakan mesin cuci
+3. jika nilai baju sudah 20, maka, mesin cuci nyala
+4. jika nilai baju kurang dari 20, maka, mesin cuci tidak nyala
 
 SET 'baju' with 0
 WHILE 'baju' LESS THAN 20 THEN
   'baju' EQUALS 'baju' PLUS 1
   PRINT 'baju'
 ENDWHILE
-RUN mesin cuci
+IF 'baju' EQUALS TO 20 THEN
+  PRINT 'mesin cuci nyala'
+ELSE
+  PRINT 'mesin cuci tidak nyala'
+ENDIF
 
 ==============================================================
 
