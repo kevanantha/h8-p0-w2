@@ -1,4 +1,5 @@
 1. Newton Second Law
+--------------------
 STORE 'massaBenda' with 600
 STORE 'percepatanBenda' with 2
 SET 'resultanGaya' with 'massaBenda' TIMES 'percepatanBenda'
@@ -7,24 +8,53 @@ PRINT 'resultanGaya'
 ==============================================================
 
 2. Tahun Kabisat
-IF 'tahun' MODULUS 4 EQUALS TO 0 AND 'tahun' MODULUS 100 NOT EQUALS TO 0 THEN
+----------------
+1. tampung nilai input(harus number) di variable 'tahun'
+2. apabila 'tahun' habis di bagi 4 dan tidak habis di bagi 100, maka tahun tersebut adalah tahun kabisat dan tampilkan true. jika tidak, tahun tersebut adalah bukan tahun kabisat dan tampilkan false
+
+IF 'tahun' MODULUS 4 EQUALS TO 0 AND 'tahun' MODULUS 100 NOT EQUALS TO 100 THEN
   PRINT true
 ELSE
   PRINT false
 ENDIF
 
-1. tampung nilai input(harus number) di variable 'tahun'
-2. apabila 'tahun' habis di bagi 4 dan tidak habis di bagi 100, maka tahun tersebut adalah tahun kabisat dan tampilkan true. jika tidak, tahun tersebut adalah bukan tahun kabisat dan tampilkan false
-
 ==============================================================
 
-3. Laundry
+3. Laundry Day
+--------------
+
+1. tampung nilai 0 di variable 'baju'
+2. selama 'baju' kurang 20, maka 'baju' sama dengan 'baju' di tambah 1 dan print baju
+3. jika nilai baju sudah 20
+4. nyalakan mesin cuci
+
 SET 'baju' with 0
 WHILE 'baju' LESS THAN 20 THEN
   'baju' EQUALS 'baju' PLUS 1
+  PRINT 'baju'
 ENDWHILE
-PRINT 'baju'
+RUN mesin cuci
 
-1. tampung nilai 0 di variable 'baju'
-2. selama 'baju' kurang 20, maka 'baju' sama dengan 'baju' di tambah 1
-3. tampilkan 'baju'
+==============================================================
+
+4. Periksa Kuku
+---------------
+1. tampung 0 di variable 'siswaYangDiPeriksa'
+2. tampung nilai (true or false) di variable 'apakahKukuPanjang'
+3. tampung nilai true di variable 'panjang'
+4. lakukan pengulangan 40 kali (selama 'siswa' kurang dari 40) maka, lanjut step 5.
+5. di dalam pengulangan, lakukan pengecekan kondisi
+6. jika 'apakahKukuPanjang' sama dengan 'panjang', maka siswa tersebut akan di hukum
+7. jika 'apakahKukuPanjang' tidak sama dengan 'panjang', maka siswa tersebut akan di puji
+
+STORE 'siswaYangDiPeriksa' with 0
+STORE 'apakahKukuPanjang' between (true OR false)
+STORE 'panjang' with true
+WHILE 'siswa' < 40 THEN
+  IF 'apakahKukuPanjang' EQUALS TO 'panjang' THEN
+    PRINT 'siswa di hukum'
+  ELSE
+    PRINT 'siswa di puji'
+  ENDIF
+  'siswa' EQUALS 'siswa' PLUS 1
+ENDWHILE
