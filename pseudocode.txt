@@ -1,0 +1,12 @@
+1. Newton Second Law
+STORE 'massaBenda' with 600
+STORE 'percepatanBenda' with 2
+SET 'resultanGaya' with 'massaBenda' TIMES 'percepatanBenda'
+PRINT 'resultanGaya'
+
+2. Tahun Kabisat
+IF 'tahun' MODULUS 4 EQUALS TO 0 AND 'tahun' MODULUS 100 NOT EQUALS TO 100 THEN
+  PRINT true
+ELSE
+  PRINT false
+END IF
