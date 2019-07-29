@@ -4,10 +4,11 @@ var tahun = 1997;
 
 switch (true) {
   case tanggal > 0 && tanggal < 32:
-    tanggal = tanggal;
+    tanggal;
     break;
   default:
     tanggal = 'Invalid Tanggal';
+    break;
 }
 
 switch (bulan) {
@@ -49,14 +50,16 @@ switch (bulan) {
     break;
   default:
     bulan = 'Invalid Bulan';
+    break;
 }
 
 switch (true) {
   case tahun >= 1900 && tahun <= 2200:
-    tahun = tahun;
+    tahun;
     break;
   default:
     tahun = 'Invalid Tahun';
+    break;
 }
 
 console.log(`${tanggal} ${bulan} ${tahun}`);
