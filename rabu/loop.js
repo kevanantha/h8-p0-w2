@@ -23,3 +23,36 @@ console.log('LOOPING KEDUA');
 for (var j = 20; j > 0; j--) {
   console.log(j + ' - I will become fullstack developer');
 }
+
+// 3. Angka Ganjil dan Genap
+for (var x = 1; x <= 100; x++) {
+  if (x % 2 === 0) {
+    console.log('GENAP');
+  } else {
+    console.log('GANJIL');
+  }
+}
+
+for (var y = 1; y <= 100; y += 2) {
+  if (y % 3 === 0) {
+    console.log(y + ' KELIPATAN 3');
+  } else {
+    console.log('');
+  }
+}
+
+for (var z = 1; z <= 100; z += 5) {
+  if (z % 6 === 0) {
+    console.log(z + ' KELIPATAN 6');
+  } else {
+    console.log('');
+  }
+}
+
+for (var k = 1; k <= 100; k += 9) {
+  if (k % 10 === 0) {
+    console.log(k + ' KELIPATAN 10');
+  } else {
+    console.log('');
+  }
+}
