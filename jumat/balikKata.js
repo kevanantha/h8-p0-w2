@@ -1,6 +1,8 @@
 function balikKata(kata) {
-  var balik = kata.split('').reverse();
-  return balik.join();
+  return kata
+    .split('')
+    .reverse()
+    .join('');
 }
 
 // TEST CASES
