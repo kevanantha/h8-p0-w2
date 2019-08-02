@@ -5,7 +5,7 @@ function xo(str) {
   for (var i = 0; i < str.length; i++) {
     if (str[i] == 'o') {
       o++;
-    } else {
+    } else if (str[i] == 'x') {
       x++;
     }
   }

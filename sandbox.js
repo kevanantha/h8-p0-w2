@@ -41,7 +41,7 @@
 //   siswa++;
 // }
 
-var input = 5;
+// var input = 5;
 
 // 1.
 // for (var i = 0; i < input; i++) {
@@ -75,79 +75,89 @@ var input = 5;
 //   chr = '';
 // }
 
-// var tanggal = 40;
-// var bulan = 13;
-// var tahun = 1997;
+var tanggal = 40;
+var bulan = 15;
+var tahun = 1900;
+var result;
 
-// switch (true) {
-//   case tanggal > 0 && tanggal < 31:
-//   case tahun > 1899 && tahun < 2201:
-//     switch (bulan) {
-//       case 1:
-//         bulan = 'Januari';
-//         break;
-//       case 2:
-//         bulan = 'Februari';
-//         break;
-//       case 3:
-//         bulan = 'Maret';
-//         break;
-//       case 4:
-//         bulan = 'April';
-//         break;
-//       case 5:
-//         bulan = 'Mei';
-//         break;
-//       case 6:
-//         bulan = 'Juni';
-//         break;
-//       case 7:
-//         bulan = 'Juli';
-//         break;
-//       case 8:
-//         bulan = 'Agustus';
-//         break;
-//       case 9:
-//         bulan = 'September';
-//         break;
-//       case 10:
-//         bulan = 'Oktober';
-//         break;
-//       case 11:
-//         bulan = 'November';
-//         break;
-//       case 12:
-//         bulan = 'Desember';
-//         break;
-//       default:
-//         console.log('masukan masukkan data dengan benar, sebagai berikut:');
-//         console.log('Tanggal (1 - 31), Bulan (1 - 12), Tahun (1900 - 2200)');
-//     }
-//     console.log(tanggal + ' ' + bulan + ' ' + tahun);
-//     break;
-//   default:
-//     console.log('masukan masukkan data dengan benar, sebagai berikut:');
-//     console.log('Tanggal (1 - 31), Bulan (1 - 12), Tahun (1900 - 2200)');
-// }
+switch (true) {
+  case tanggal > 0 && tanggal < 31:
+    tanggal;
+    break;
+  case bulan > 0 && bulan < 12:
+    switch (bulan) {
+      case 1:
+        bulan = 'Januari';
+        break;
+      case 2:
+        bulan = 'Februari';
+        break;
+      case 3:
+        bulan = 'Maret';
+        break;
+      case 4:
+        bulan = 'April';
+        break;
+      case 5:
+        bulan = 'Mei';
+        break;
+      case 6:
+        bulan = 'Juni';
+        break;
+      case 7:
+        bulan = 'Juli';
+        break;
+      case 8:
+        bulan = 'Agustus';
+        break;
+      case 9:
+        bulan = 'September';
+        break;
+      case 10:
+        bulan = 'Oktober';
+        break;
+      case 11:
+        bulan = 'November';
+        break;
+      case 12:
+        bulan = 'Desember';
+        break;
+      default:
+        bulan = 'bulan-salah';
+        break;
+    }
+    break;
+  case tahun > 1899 && tahun < 2201:
+    tahun;
+    break;
+  default:
+    tahun = 'tahun-salah';
+    break;
+  default:
+    tanggal = 'tanggal-salah';
+    break;
+}
+
+console.log(tanggal + ' ' + bulan + ' ' + tahun);
 
 /**
  * @param {string[]} strs
  * @return {string}
  */
-var longestCommonPrefix = function(strs) {
-  if (strs.length == 0) return;
-  var prefix = strs[0];
-  for (let i = 0; i < strs.length; i++) {
-    console.log(strs[i].indexOf(prefix));
-    prefix;
-    while (strs[i].indexOf(prefix) !== 0) {
-      console.log(strs[i]);
-      prefix = prefix.substring(0, prefix.length - 1);
-      if (!prefix) return;
-    }
-    prefix;
-  }
-  return prefix;
-};
+// var longestCommonPrefix = function(strs) {
+//   if (strs.length == 0) return;
+//   var prefix = strs[0];
+//   for (let i = 0; i < strs.length; i++) {
+//     console.log(strs[i].indexOf(prefix));
+//     prefix;
+//     while (strs[i].indexOf(prefix) !== 0) {
+//       console.log(strs[i]);
+//       prefix = prefix.substring(0, prefix.length - 1);
+//       if (!prefix) return;
+//     }
+//     prefix;
+//   }
+//   return prefix;
+// };
 
-console.log(longestCommonPrefix(['leetcode', 'leetcw', 'leetsdf']));
+// console.log(longestCommonPrefix(['leetcode', 'leetcw', 'leetsdf']));
